@@ -13,6 +13,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Mulish:wght@300;400;500;600;700;800&family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="preloader">
+
+    </div>
     <section id="banner">
         <img src="image/logo.png" class="logo">
         <div class="banner-text">
@@ -183,6 +186,13 @@
 
     </section>
 
+    <!--Videos added to see/test the preloader feature-->
+    <div id="video" style="display:none">
+        <iframe width="642" height="361" src="https://www.youtube.com/embed/E60ysbd68gM" title="Ribbon rose- hijab pin, stick pin or hat pin" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="642" height="361" src="https://www.youtube.com/embed/bvnTQGDs3-Q" title="DIY: How to make a Kanzashi fabric flower hair clip." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="642" height="361" src="https://www.youtube.com/embed/kc5JH5OW3jY" title="DIY: How to make ribbon bow hair clip" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
     <!--footer-->
     <section id="footer">
         <img src="image/footer-img.png" class="footer-img">
@@ -239,6 +249,14 @@
         var scroll = new SmoothScroll('a[href*="#"]', {
 	speed: 1000
 });
+    </script>
+
+    <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
     </script>
 </body>
 </html>
